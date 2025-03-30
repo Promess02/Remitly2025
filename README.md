@@ -15,7 +15,7 @@ This application provides an API to manage and retrieve bank information using S
 1. Clone the repository:
     ```bash
     git clone https://github.com/Promess02/Remitly2025.git
-    cd SWIFT_App
+    cd Remitly2025
     ```
 2. Install dependencies:
     ```bash
@@ -30,16 +30,17 @@ This application provides an API to manage and retrieve bank information using S
 ---
 
 ## Run the Application in Docker
-
-1. Build the Docker image:
+0. If you installed dependencies with "npm i", then you need to delete node_modules and package-lock.json to run
+1. Run docker daemon
+2. Build the Docker image:
     ```bash
     docker build -f app.dockerfile -t swift-app .
     ```
-2. Run the Docker container:
+3. Run the Docker container:
     ```bash
     docker run -p 8080:8080 swift-app
     ```
-3. Access the app at [http://localhost:8080](http://localhost:8080)
+4. Access the app at [http://localhost:8080](http://localhost:8080)
 
 ---
 
